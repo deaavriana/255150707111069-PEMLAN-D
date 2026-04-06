@@ -42,8 +42,9 @@ public class Pekerja extends Manusia {
     @Override
     public String toString() {
         return super.toString() + "\n" +
-                "Tahun Masuk : " + tahunMasuk + "\n" +
-                "Jumlah Anak : " + jumlahAnak + "\n" +
-                "Pendapatan  : $" + getPendapatan();
+                 String.format(
+                "Tahun Masuk   : %s\n" +
+                "Jumlah Anak   : %d",tahunMasuk, jumlahAnak
+                );
     }
 }
